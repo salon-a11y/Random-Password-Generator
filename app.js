@@ -41,4 +41,5 @@ if(pass === ""){
 function copypassword(){
     navigator.clipboard.writeText(inputs.value);
     alert("Password copied!");
+    inputs.value = ""
   };
