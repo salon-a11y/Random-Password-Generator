@@ -1,7 +1,7 @@
 let inputbox = document.querySelector(".input-box")
 let inputs = document.querySelector("#password")
 let copybtn = document.querySelector(".copy-btn")
-let passwordlength = document.querySelector("#Length")
+let passwordlength = document.querySelector("#length")
 let symbols = document.querySelector("#symbol")
 let number = document.querySelector("#number")
 let lowr = document.querySelector("#lower")
@@ -30,6 +30,9 @@ if(symbols.checked){
 let password = ""
 for(let i = 0;i< passwordlength.value;i++){
     password+=pass[Math.floor(Math.random()*pass.length)]
+}
+if(passwordlength.value>=12){
+    alert("maximum length are 12")
 }
 inputs.value = password
 if(pass === ""){
